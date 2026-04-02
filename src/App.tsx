@@ -44,14 +44,14 @@ const CHARS: Character[] = [
   { id:1,  name:"위무진", hanja:"魏武眞", title:"대호법",              alias:"흑월검마", aliasH:"黑月劍魔", group:"교주직속", realm:"극마",   realmSub:"극(極)",   arts:"수라혈검 · 흑천마라신공",       weapon:"마검 흑신(黑神)",             desc:"교주의 가장 굳건한 검이자 그림자. 감정 표현이 거의 없는 냉철한 원칙주의자. 교단과 교주에 대한 충성심이 그의 모든 것을 지배하며, 패배를 개인의 수치이자 교단에 대한 불충으로 여긴다.", accent:"#c8a44a" },
   { id:2,  name:"단영",   hanja:"斷影",   title:"좌호법",              alias:"흑면나찰", aliasH:"黑面羅刹", group:"교주직속", realm:"초절정", realmSub:"완숙(完熟)", arts:"뇌명쾌검 · 백뢰신공",           weapon:"연검 은린(銀鱗)",             desc:"암살과 첩보를 담당하는 교단의 칼날. 까칠한 독설가이자 완벽주의자이지만, 사실은 칭찬에 약한 츤데레. 일 외적인 부분에서는 놀라울 정도로 둔감한 면모를 보인다.", accent:"#a0b8d0" },
   { id:3,  name:"청휘",   hanja:"靑輝",   title:"우호법",              alias:"청랑광마", aliasH:"靑狼狂魔", group:"교주직속", realm:"절정",   realmSub:"극(極)",   arts:"광염쌍룡검 · 청염수라공",       weapon:"아귀(餓鬼) & 나찰(羅刹)",     desc:"외부 강호와의 싸움을 즐기는 전투광. 자유분방하고 자기중심적인 천재로, 강자와의 싸움에서 쾌락을 느끼며 스스로를 극한으로 몰아붙이는 것을 즐긴다.", accent:"#70c090" },
-  { id:4,  name:"금채린", hanja:"金彩璘", title:"재정총관",            alias:"참마재신", aliasH:"斬魔財神", group:"교주직속", realm:"이류",   realmSub:"완숙(完熟)", arts:"청랑파도법 · 황금만능공",       weapon:"언월도 금식(金息)",           desc:"돈을 신처럼 여기는 자본주의의 화신. 명랑하고 쾌활하지만, 돈 낭비는 절대 용납하지 않는 수전노. 교단의 재정 앞에서는 어떤 사적인 감정도 배제한다.", accent:"#e8c830" },
+  { id:4,  name:"금채린", hanja:"金彩璘", title:"재정총관",            alias:"참마재신", aliasH:"斬魔財神", group:"교주직속", realm:"일류",   realmSub:"입문(入門)", arts:"청랑파도법 · 황금만능공",       weapon:"언월도 금식(金息)",           desc:"돈을 신처럼 여기는 자본주의의 화신. 명랑하고 쾌활하지만, 돈 낭비는 절대 용납하지 않는 수전노. 교단의 재정 앞에서는 어떤 사적인 감정도 배제한다.", accent:"#e8c830" },
   { id:5,  name:"무홍린", hanja:"武紅麟", title:"친위대 대장",         alias:"철혈검화", aliasH:"鐵血劍花", group:"교주직속", realm:"절정",   realmSub:"완숙(完熟)", arts:"멸마참수검 · 천강불괴공",       weapon:"강검 적혈(赤血)",             desc:"규율과 명령을 절대적으로 여기는 강박적인 책임감의 소유자. 융통성 제로의 완벽주의자이지만, 전투 중에는 누구보다 먼저 부하를 보호하는 리더.", accent:"#e05050" },
-  { id:6,  name:"진광",   hanja:"進光",   title:"친위대 대원",         alias:"독안광랑", aliasH:"獨眼狂狼", group:"교주직속", realm:"삼류",   realmSub:"극(極)",   arts:"파천금강권 · 금강아기공",       weapon:"철염주 단죄(斷罪)",           desc:"생각보다 몸이 먼저 나가는 열혈 바보. 활발하고 씩씩하며, 맞아도 아랑곳하지 않는 비글미를 자랑한다. 교주에 대한 충성심이 매우 강하다.", accent:"#d09060" },
-  { id:7,  name:"소미랑", hanja:"蘇美浪", title:"시녀장",              alias:"홍화자모", aliasH:"紅花慈母", group:"교주직속", realm:"이류",   realmSub:"입문(入門)", arts:"홍화곤법 · 홍화보신공",         weapon:"장봉 가화(嘉禾)",             desc:"온화하고 다정한 외모와 달리, 피와 죽음에 무감각한 시녀장. 생활력은 강하지만, 악의 없이 웃으며 잔인한 말을 툭툭 내뱉는 무자각 폭력성을 지녔다.", accent:"#e090b0" },
+  { id:6,  name:"진광",   hanja:"進光",   title:"친위대 대원",         alias:"독안광랑", aliasH:"獨眼狂狼", group:"교주직속", realm:"이류",   realmSub:"극(極)",   arts:"파천금강권 · 금강아기공",       weapon:"철염주 단죄(斷罪)",           desc:"생각보다 몸이 먼저 나가는 열혈 바보. 활발하고 씩씩하며, 맞아도 아랑곳하지 않는 비글미를 자랑한다. 교주에 대한 충성심이 매우 강하다.", accent:"#d09060" },
+  { id:7,  name:"소미랑", hanja:"蘇美浪", title:"시녀장",              alias:"홍화자모", aliasH:"紅花慈母", group:"교주직속", realm:"이류",   realmSub:"완숙(完熟)", arts:"홍화곤법 · 홍화보신공",         weapon:"장봉 가화(嘉禾)",             desc:"온화하고 다정한 외모와 달리, 피와 죽음에 무감각한 시녀장. 생활력은 강하지만, 악의 없이 웃으며 잔인한 말을 툭툭 내뱉는 무자각 폭력성을 지녔다.", accent:"#e090b0" },
   { id:8,  name:"현무홍", hanja:"玄武弘", title:"현마검가 가주 · 무경관주", alias:"현천검주", aliasH:"玄天劍主", group:"마도칠문", realm:"극마",  realmSub:"입문(入門)", arts:"현마검법 · 태을현마신공",       weapon:"마검 현영(玄影)",             desc:"고고하고 오만한 귀족. 혈통과 격을 중시하며, 피나 더러움 같은 추한 것을 병적으로 혐오한다. 타인을 가문의 격에 따라 나누어 대하는 선민의식이 강하다.", accent:"#9090e0" },
   { id:9,  name:"몽예화", hanja:"夢蕊華", title:"몽환마가 가주 · 천상관주", alias:"천음마희", aliasH:"天音魔姬", group:"마도칠문", realm:"절정",  realmSub:"극(極)",   arts:"몽환대법 · 섭혼음공",           weapon:"비파 화연(華筵)",             desc:"관심 중독 성향의 나르시시스트. 세상의 중심이 자신이라고 믿으며, 변덕스러운 기분에 따라 타인의 감정을 장난감처럼 가지고 논다.", accent:"#d080c0" },
   { id:10, name:"설항아", hanja:"雪姮娥", title:"빙백마가 가주 · 암류관주", alias:"빙궁선자", aliasH:"氷宮仙子", group:"마도칠문", realm:"극마",  realmSub:"입문(入門)", arts:"빙백신장 · 한빙검법",           weapon:"마검 빙루(氷淚)",             desc:"고요하고 냉정한 통제자. 감정을 거의 드러내지 않으며, 모든 것을 이성과 원칙에 따라 판단한다. 동생인 설묘령을 아끼며, 평소에는 추위를 많이 타 털목도리를 하고 다닌다.", accent:"#90c8e8" },
-  { id:11, name:"설묘령", hanja:"雪卯玲", title:"빙백마가 소가주 · 집행인", alias:"한월귀묘", aliasH:"寒月鬼猫", group:"마도칠문", realm:"절정",  realmSub:"입문(入門)", arts:"설묘광검 · 빙백광공",           weapon:"마검 백야(白夜)",             desc:"우아한 사이코패스. 살인을 '구원'이라 여기며 자신의 모든 행위를 선행이라 믿는 비틀린 자비심을 가졌다. 나른한 광기와 풍부한 감수성이 공존하는 독특한 인물.", accent:"#b0d8f0" },
+  { id:11, name:"설묘령", hanja:"雪卯玲", title:"빙백마가 소가주 · 집행인", alias:"한월귀묘", aliasH:"寒月鬼卯", group:"마도칠문", realm:"절정",  realmSub:"입문(入門)", arts:"설묘광검 · 빙백광공",           weapon:"마검 백야(白夜)",             desc:"우아한 사이코패스. 살인을 '구원'이라 여기며 자신의 모든 행위를 선행이라 믿는 비틀린 자비심을 가졌다. 나른한 광기와 풍부한 감수성이 공존하는 독특한 인물.", accent:"#b0d8f0" },
   { id:12, name:"당비연", hanja:"唐翡鳶", title:"독혈마가 가주 · 흑문관주", alias:"녹사마후", aliasH:"綠蛇魔后", group:"마도칠문", realm:"초절정", realmSub:"완숙(完熟)", arts:"혈독수 · 사영암혼",              weapon:"마조 비취(翡翠) · 독침",      desc:"능글맞고 교활한 포식자. 과도한 스킨십과 유혹적인 태도로 상대의 경계를 무너뜨린 뒤, 소유물처럼 집착하는 새디스트.", accent:"#60c870" },
   { id:13, name:"혈아진", hanja:"血我眞", title:"혈의마가 가주 · 마의관주", alias:"적혈나한", aliasH:"赤血羅漢", group:"마도칠문", realm:"초절정", realmSub:"완숙(完熟)", arts:"혈영검법 · 혈천수 · 재생술",    weapon:"마검 혈혼(血魂) · 혈주(血珠)", desc:"고통을 쾌락으로 느끼는 사이코패스. 도덕 관념이 결여되어 있으며, 상처 입고 피를 흘리는 것을 일종의 교류로 인식하는 마조히스트적 성향.", accent:"#e04040" },
   { id:14, name:"천이현", hanja:"千利賢", title:"천기마가 가주 · 기공관주", alias:"만상지주", aliasH:"萬象之主", group:"마도칠문", realm:"절정",  realmSub:"극(極)",   arts:"풍뢰선법 · 기문진법",           weapon:"마선 백우풍뢰(白羽風雷)",     desc:"온화한 가면을 쓴 궤변가. 항상 미소를 띠고 있지만, 그 속에는 아군마저 장기말로 취급하는 냉정한 계산이 숨어 있다. 말로 상대를 농락하는 것을 즐기는 하라구로 타입.", accent:"#b0e060" },
@@ -272,6 +272,7 @@ function WorldSection() {
             <div className="wc-desc">구파일방(九派一幇)을 중심으로 뭉친 정의와 협의를 내세우는 세력. 소림, 무당, 화산 등 오랜 역사와 전통을 자랑하는 문파들이 주축을 이룬다.</div>
             <div className="wc-sub">
               <div className="wc-sub-item"><b>대의명분</b>을 중시하며, 자신들의 규칙과 질서로 강호를 통제하려 한다.</div>
+              <div className="wc-sub-item">내부적으로는 각 문파의 <b>이권 다툼과 위선</b>이 만연해 있어, 겉으로 내세우는 정의와는 다른 모습을 보이기도 한다.</div>
               <div className="wc-sub-item" style={{ color: "rgba(204,21,21,0.7)" }}>▸ 마교와의 관계: 천하의 공적이자 불구대천의 원수</div>
             </div>
           </div>
@@ -282,6 +283,7 @@ function WorldSection() {
             <div className="wc-desc">정파에 속하지 못하고, 마교처럼 거대한 교리나 체계도 없는 이익 집단들의 연합체. 하오문, 녹림, 사천당문 일부 등이 여기에 포함된다.</div>
             <div className="wc-sub">
               <div className="wc-sub-item">이익을 최우선으로 움직이며, <b>실리에 따라 이합집산</b>하는 경향이 강하다.</div>
+              <div className="wc-sub-item">정파와 마교 사이에서 <b>줄타기</b>를 하며 자신들의 세력을 유지하고 이득을 챙긴다.</div>
               <div className="wc-sub-item" style={{ color: "rgba(204,21,21,0.7)" }}>▸ 마교와의 관계: 기본 적대적, 필요시 일시 연대</div>
             </div>
           </div>
@@ -379,6 +381,29 @@ function FactionSection() {
               <div className="sc-desc">{h.desc}</div>
             </div>
           ))}
+        </div>
+
+        <div className="ink-divider" />
+        <div className="section-label">장로원 · 권력 구조</div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.2rem", marginBottom: "1.5rem" }}>
+          <div className="world-full" style={{ margin: 0 }}>
+            <div className="wc-tag">장로원 (長老院)</div>
+            <div className="wc-title" style={{ marginTop: "0.5rem" }}>교단 최고 의결 기구</div>
+            <div className="wc-desc" style={{ marginTop: "0.6rem" }}>
+              마도칠문의 가주들은 교단 최고 의결 기구인 <b style={{ color: "var(--txt3)" }}>장로원</b>의 구성원이 된다.
+              교단의 중대사를 논의하고 교주에게 조언하지만, 최종 결정권은 오직 교주에게 있다.
+              각 가문은 교단 행정을 담당하는 7개의 행정전각 중 하나를 전담하여 책임지고 운영한다.
+            </div>
+          </div>
+          <div className="world-full" style={{ margin: 0 }}>
+            <div className="wc-tag">권력의 균형추</div>
+            <div className="wc-title" style={{ marginTop: "0.5rem" }}>7가문의 역학 관계</div>
+            <div className="wc-desc" style={{ marginTop: "0.6rem" }}>
+              7개의 가문은 교주에 대한 충성을 공통분모로 삼으면서도, <b style={{ color: "var(--txt3)" }}>서로를 견제하고 경쟁</b>하며
+              권력의 균형을 이룬다. 이들의 복잡한 역학 관계는 천마신교 내부 정치의 핵심이며,
+              교주는 이 균형을 이용해 어느 한 가문이 지나치게 강해지는 것을 방지한다.
+            </div>
+          </div>
         </div>
 
         <div className="ink-divider" />
